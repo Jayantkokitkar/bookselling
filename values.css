@@ -1,0 +1,26 @@
+.btn.btn-primary{
+    background-color: #118AB2;
+    border-color: #118AB2;
+}
+.btn.btn-primary:hover{
+    background-color: #261447;
+}
+.btn.btn-outline-success{
+    background-color: #2F2F2F;
+    border-color: #118AB2;
+    color: #D8DDDE;
+    transition: none;
+}
+.btn.btn-outline-success:hover{
+    background-color:#FF3864;
+    border-color: #FF3864;
+    color: #D8DDDE;
+    transition: none;
+}
+.blockquote{
+    color: #FF3864;
+}
+.display-3{
+    font-family: 'Sansita Swashed', cursive;
+    color: #261447;
+}

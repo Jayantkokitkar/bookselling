@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <script src="float-panel.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="values.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@500&display=swap" rel="stylesheet"> 
 
     <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.min.css">
@@ -14,39 +17,51 @@
 
 </head>
 
-<body style="background-color:#1F2833;">
+<body >
     <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg fixed-sticky navbar-dark nav-bag">
-            <a class="navbar-brand" href="#"><img class="icon-style" src="undraw_business_shop_qw5t.svg" height="50px" width="50px"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+        <!--navbar-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#"><img src="undraw_business_shop_qw5t.svg" height="50px" width="50px"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Gallary</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Buy</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            About
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#">Creator</a>
-                            <a class="dropdown-item" href="#">Contact us</a>
-                            <a class="dropdown-item" href="#">Fedback</a>
-                        </div>
-                    </li>
-                </ul>
+          
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Gallary</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                  </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0" style="color:#118AB2">
+                <a class="btn btn-outline-success mr-sm-2" id="demo" type="submit" href="login.html">Login</a>
+                <a class="btn btn-outline-success  mr-sm-2" type="submit" href="signup.html">SignUp</a>
+
+            </form>
             </div>
-        </nav>
-        <marquee style="color: white">Under construction</marquee>
+          </nav>
+
+
         
+
+
+
+          
+        <marquee style="color: white">Under construction</marquee>
+        <!--midsection-->
+        <div class="row midsection">
+            <div class="col-md-6 "><div class="maintitle display-3">PEEK-A-BOOK</div>
+            <blockquote class="blockquote">
+              <p class="mb-0">The perfect place for bibliophiles.</p>
+            </blockquote>
+          </div>
+            <div class="col-md-6"><img src="undraw_road_to_knowledge_m8s0.svg" class="img-fluid mb-3 d-none d-md-block"></div>
+        </div>
         <img src="undraw_under_construction_46pa.svg" class="img-fluid" style="display: block;margin: auto" height="600px" width="600px">
 
 
@@ -59,7 +74,13 @@
 
 
 
+<script>
+    
+    function myfunc() {
+  location.href="login.html"
+}
 
+</script>
 
     
 

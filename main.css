@@ -1,0 +1,17 @@
+.midsection{
+    padding: 1rem;
+}
+.customimg{
+    height: 400px;
+    width: 500px;
+}
+.maintitle{
+    display: block;
+    margin-top: 10%;
+    text-align: center;
+}
+.blockquote{
+    display: block;
+    margin: auto;
+    text-align: center;
+}
