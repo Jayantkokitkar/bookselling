@@ -1,2 +1,3 @@
-asdfghjkl
-jayant
+03-10-2020
+added the cards for the trending books in index.html
+added respective css in main.css
