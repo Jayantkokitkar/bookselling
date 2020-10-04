@@ -1,12 +1,114 @@
+.maintitle {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  background-color: #000;
+}
+
+.text {
+  position: relative;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 2em;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #000, #fff, #000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 3s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
+
+/* Quote */
+
+@function makelongshadow($length,$angle) {
+  $val: 0px 0px transparent;
+  @for $i from 1 through $length {
+    $val: #{$val}, #{$i}px #{$i*$angle}px #aaa;
+  }
+  @return $val;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:700,900');
+
+.quote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*align-content: center;*/
+  background: radial-gradient(#fff, #aaa);
+ /* background-size: 100vw 100vh; */
+  overflow: hidden;
+}
+
+.txt {
+	text-align: justify;
+  /*justify-content: center;*/
+  /*text-align: center;*/
+  position: relative;
+  font-family: 'Roboto';
+  font-size: 7vmin;
+  animation: netflix_style 3.5s infinite;
+  outline: none;
+  white-space: nowrap;
+}
+
+@keyframes netflix_style {
+  0% {
+    text-shadow: makelongshadow(100,1);
+    color:#f3f3f3;
+    transform: scale(1.5, 1.5);
+  }
+  10% {
+    text-shadow: makelongshadow(100,1.5);
+    color:#f3f3f3;
+    transform: scale(1.5, 1.5);
+  }
+  15% {
+     color:#f3f3f3;
+  }
+  20% {    
+    color:#e90418;
+    text-shadow: none;
+    transform: scale(1.1, 1.1);
+  }
+  75% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;    
+    color:#e90418;
+    transform: scale(0.7, 0.75);
+  }
+  
+  100% {
+    opacity: 0;
+  }
+}
+
+
 .midsection{
-    padding: 1rem;
+    padding: 1rem;   
 }
 .customimg{
     height: 400px;
     width: 500px;
 }
 .maintitle{
-    display: block;
+	display: block;
     margin-top: 10%;
     text-align: center;
 }
@@ -41,8 +143,8 @@
 	color: #fff;
 }	
 
-@media screen and (max-width: 575px){
-	.col .dummy{
-		display: none;
-	}
+.secname{
+  background-color: #f8f9fa;
 }
+
+/* Book group css */
