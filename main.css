@@ -143,8 +143,44 @@
 	color: #fff;
 }	
 
+.sentence{
+  text-shadow: 0 0 2px #fff;
+}
+
+body {
+  background: url('https://ormaticr.sirv.com/Books/books-1245690.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
 .secname{
   background-color: #f8f9fa;
 }
 
-/* Book group css */
+.page-footer{
+  background-color: #fff;
+}
+
+/* footer css */
+
+.footers a {color:#696969;}
+.footers p {color:#696969;}
+.footers ul {line-height:30px;}
+
+#social-fb:hover {
+     color: #3B5998;
+     transition:all .001s;
+ }
+ #social-tw:hover {
+     color: #4099FF;
+     transition:all .001s;
+ }
+ #social-gp:hover {
+     color: #d34836;
+     transition:all .001s;
+ }
+ #social-em:hover {
+     color: #f39c12;
+     transition:all .001s;
+ }
