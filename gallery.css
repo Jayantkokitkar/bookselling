@@ -33,9 +33,11 @@
 
 /* footer css */
 
-.footers a {color:#696969;}
-.footers p {color:#696969;}
-.footers ul {line-height:30px;}
+footer a {color:#696969;}
+footer a:hover {color:#696969;}
+
+footer p {color:#696969;}
+footer ul {line-height:30px;}
 
 #social-fb:hover {
      color: #3B5998;
@@ -53,6 +55,8 @@
      color: #f39c12;
      transition:all .001s;
  }
-
-
+ .carousel {
+    position: relative;
+    display: block;
+}
 
