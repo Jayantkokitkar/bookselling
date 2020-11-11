@@ -12,14 +12,33 @@ $(document).ready(function(){
   $(document).ready(function(){
   $('[data-toggle="tooltip"]').tooltip();   
 });
-$("button").focus(function(){
-    $(this).css("border-color", "yellow");
+
+  $("#exampleInputEmail1,#exampleInputPassword1").focus(function(){
+    $(this).css("background-color", "#939090");
   });
-  $("button").blur(function(){
-    $(this).css("border-color", "green");
+  $("#exampleInputEmail1,#exampleInputPassword1").blur(function(){
+    $(this).css("background-color", "#f2f2f2");
   });
 });
+</script>
 
+<script>
+	$(document).ready(function(){
+		$("#ic").hover(function(){
+			$("#ic").animate({
+				width:"35px",
+				height:"35px",
+				opacity:0.7
+			});
+		},
+		function(){
+			$("#ic").animate({
+				width:"30px",
+				height:"30px",
+				opacity:0.7
+			});
+		});
+	});
 </script>
     <link rel="stylesheet" href="log.css">
     <link rel="stylesheet" href="values.css">
@@ -31,7 +50,7 @@ $("button").focus(function(){
 <body>
   <nav class="navbar navbar-light bg-light">
     <a class="navbar-brand" href="index.html">
-      <img src="undraw_business_shop_qw5t.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+      <img id="ic" src="undraw_business_shop_qw5t.svg" width="30" height="30" class="d-inline-block align-top" alt="">
       Home
     </a>
   </nav>
