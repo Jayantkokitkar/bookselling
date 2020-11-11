@@ -9,7 +9,17 @@ $(document).ready(function(){
     $('.message a').click(function(){
    $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
 });
+  $(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();   
 });
+$("button").focus(function(){
+    $(this).css("border-color", "yellow");
+  });
+  $("button").blur(function(){
+    $(this).css("border-color", "green");
+  });
+});
+
 </script>
     <link rel="stylesheet" href="log.css">
     <link rel="stylesheet" href="values.css">
@@ -28,25 +38,43 @@ $(document).ready(function(){
   <div class="login-page">
     <div class="form">
       <form class="register-form">
-        <input type="text" placeholder="first name"/>
-        <input type="text" placeholder="last name"/>
-        <input type="text" placeholder="address"/>
-        <input type="text" placeholder="pincode"/>
-        <input type="tel" placeholder="contact number"/>
+        <div class="form-group">
+        <input type="text" class="form-control" placeholder="first name"/>
+  
+        <input type="text" class="form-control" placeholder="last name"/>
+        <input type="text" class="form-control" placeholder="address"/>
+        <input type="text" class="form-control" placeholder="pincode"/>
+        <input type="tel" class="form-control" placeholder="contact number"/>
 
-        <input type="password" placeholder="password"/>
-        <input type="text" placeholder="email address"/>
+        <input type="password" class="form-control" placeholder="password"/>
+        <input type="text" class="form-control" placeholder="email address"/>
+      </div>
         <button class="btn btn-primary">create</button>
         
         <p class="message">Already registered? <a href="#">Sign In</a></p>
       </form>
       <form class="login-form">
-        <input type="text" placeholder="username/e-mail id"/>
+        <!-- <input type="text" placeholder="username/e-mail id"/>
         <input type="password" placeholder="password"/>
         <button class="btn btn-primary">login</button>
         <p class="message">Forgot password?</p>
-        <p class="message">Not registered? <a href="#">Create an account</a></p>
-      
+        <p class="message">Not registered? <a href="#">Create an account</a></p> -->
+        
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" data-toggle="tooltip" title="Enter Email!" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" data-toggle="tooltip" title="Enter Password!" id="exampleInputPassword1" placeholder="Password">
+          </div>
+          
+          <button type="submit" class="btn btn-primary">Submit</button>
+          <p class="message">Forgot password?</p>
+          <p class="message">Not registered? <a href="#">Create an account</a></p>
+        
+
       </form>
     </div>
   </div>
